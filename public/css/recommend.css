@@ -1,0 +1,45 @@
+.recommend-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.recommend-2 {
+	position: absolute;
+	top: 0;
+	left: 276px;
+}
+
+.recommend-3 {
+	position: absolute;
+	top: 0;
+	left: 828px;
+}
+.recommend-4 {
+	position: absolute;
+	top: 212px;
+	left: 276px;
+}
+.recommend-5 {
+	position: absolute;
+	top: 212px;
+	left: 552px;
+}
+.recommend-6 {
+	position: absolute;
+	top: 212px;
+	left: 828px;
+}
+
+/* a标签 分离布局 */
+.con-header , .con-footer{
+	left: 92px;
+	width: 1084px;
+}
+.con-header a {
+	width: 25%;
+	height: 1px;
+}
+.con-footer a {
+	width: 50%;
+	height: 1px;
+}

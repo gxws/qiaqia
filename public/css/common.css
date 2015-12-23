@@ -1,0 +1,242 @@
+html * {
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: relative;
+	width: 1280px;
+	height: 720px;
+	font-family: SimHei;
+	font-size: 24px;
+	overflow: hidden;
+}
+img {
+	border: none;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
+.prev, .next {
+	display: block;
+	width: 50px;
+	height: 60px;
+}
+.prev {
+	background: url(../images/prev.png?__spriter) no-repeat;
+}
+.next {
+	background: url(../images/next.png?__spriter) no-repeat;
+}
+/* header css */
+.header-nav {
+	position: absolute;
+	top: 16px;
+	left: 30px;
+}
+.header-nav .nav-1, .header-nav .nav-2, .header-nav .nav-3, .header-nav .nav-4 {
+	float: left;
+	width: 194px;
+	height: 110px;
+	text-align: center;
+}
+.header-nav .shaddow {
+	position: relative;
+	top: -6px;
+	display: none;
+	width: 184px;
+	height: 10px;
+	background: url(../images/nav-select.png?__spriter) no-repeat;
+}
+/* header css end */
+
+/* header nav */
+.header-nav .active .shaddow {
+	display: block;
+}
+/* nav 1*/
+.header-nav .nav-1 .icon {
+	display: inline-block;
+	width: 90px;
+	height: 110px;
+	background: url(../images/nav-default-1.png?__spriter) no-repeat;
+}
+.header-nav .nav-1.focus .icon {
+	background: url(../images/nav-1.png?__spriter) no-repeat;
+}
+/* nav 1 end*/
+
+/* nav 2*/
+.header-nav .nav-2 {
+	margin-left: -15px;
+}
+.header-nav .nav-2 .icon {
+	display: inline-block;
+	width: 194px;
+	height: 110px;
+	background: url(../images/nav-default-2.png?__spriter) no-repeat;
+}
+.header-nav .nav-2.focus .icon {
+	background: url(../images/nav-2.png?__spriter) no-repeat;
+}
+/* nav 2 end*/
+
+/* nav 3*/
+.header-nav .nav-3 {
+	margin-left: 10px;
+}
+.header-nav .nav-3 .icon {
+	display: inline-block;
+	width: 160px;
+	height: 110px;
+	background: url(../images/nav-default-3.png?__spriter) no-repeat;
+}
+.header-nav .nav-3.focus .icon {
+	background: url(../images/nav-3.png?__spriter) no-repeat;
+}
+/* nav 3 end*/
+
+/* nav 4*/
+.header-nav .nav-4 {
+	margin-left: 10px;
+}
+.header-nav .nav-4 .icon {
+	display: inline-block;
+	width: 194px;
+	height: 110px;
+	background: url(../images/nav-default-4.png?__spriter) no-repeat;
+}
+.header-nav .nav-4.focus .icon {
+	background: url(../images/nav-4.png?__spriter) no-repeat;
+}
+/* nav 4 end*/
+
+/* footer css */
+.footer-menu {
+	position: absolute;
+	bottom: 34px;
+	width: 1280px;
+	height: 70px;
+	text-align: center;
+}
+.footer-menu span {
+	margin: 0 10px;
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+}
+.footer-menu .menu-1 {
+	background: url(../images/menu-default-1.png?__spriter) no-repeat; 
+}
+.footer-menu .menu-1.focus {
+	background: url(../images/menu-1.png?__spriter) no-repeat; 
+}
+.footer-menu .menu-2 {
+	background: url(../images/menu-default-2.png?__spriter) no-repeat; 
+}
+.footer-menu .menu-2.focus {
+	background: url(../images/menu-2.png?__spriter) no-repeat; 
+}
+.footer-menu .menu-3 {
+	background: url(../images/menu-default-3.png?__spriter) no-repeat; 
+}
+.footer-menu .menu-3.focus {
+	background: url(../images/menu-3.png?__spriter) no-repeat; 
+}
+/* footer css end */
+
+.section {
+	position: absolute;
+	top: 163px;
+	left: 92px;
+	width: 1084px;
+}
+.bg-logo {
+	position: absolute;
+	top: 619px;
+	left: 949px;
+	width: 212px;
+	height: 73px;
+	background: url(../images/bg-logo.png) no-repeat;
+}
+/* 垂直长图 */
+.list-type-1 {
+	width: 256px;
+	height: 404px;
+}
+.list-type-1:focus:before {
+	position: absolute;
+	content: "";
+	top: -15px;
+	left: -15px;
+	width: 286px;
+	height: 434px;
+	background: url(../images/border-1.png?__spriter) no-repeat;
+	z-index: 9;
+}
+.list-type-1 .img {
+	display: inline-block;
+	width: 256px;
+	height: 404px;
+}
+/* 垂直长图 end */
+
+/* 水平长图 */
+.list-type-2 {
+	width: 532px;
+	height: 192px;
+}
+.list-type-2:focus:before {
+	position: absolute;
+	content: "";
+	top: -16px;
+	left: -14px;
+	width: 562px;
+	height: 222px;
+	background: url(../images/border-2.png?__spriter) no-repeat;
+	z-index: 9;
+}
+.list-type-2 .img {
+	display: inline-block;
+	width: 532px;
+	height: 192px;
+}
+/* 水平长图 end */
+
+/* 水平短图 */
+.list-type-3 {
+	width: 256px;
+	height: 192px;
+}
+.list-type-3:focus:before {
+	position: absolute;
+	content: "";
+	top: -15px;
+	left: -15px;
+	width: 286px;
+	height: 222px;
+	background: url(../images/border-3.png?__spriter) no-repeat;
+	z-index: 9;
+}
+.list-type-3 .img {
+	display: inline-block;
+	width: 256px;
+	height: 192px;
+}
+/* 水平短图 end */
+
+
+/* a标签 分离布局 */
+#controller a {
+	display: inline-block;
+	float: left;
+}
+.con-header {
+	position: absolute;
+	top: 0;
+}
+
+.con-footer {
+	position: absolute;
+	bottom: 0;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>专辑1</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../public/css/album.css">
+	<script src="../public/js/template.js"></script>
+
+	<script type="text/javascript">
+		//这个是我模拟的数据结构
+		var data = {
+			footers: [{
+				href: "#"
+			},{
+				href: "#"
+			},{
+				href: "#"
+			}],
+			lists: [{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界"
+			},{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界"
+			},{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界"
+			},{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界"
+			},{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界"
+			},{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界"
+			},{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界"
+			},{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界"
+			},{
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界9"
+			}]
+		}
+	</script>
+
+</head>
+<body style="background: url(../public/images/background.jpg) no-repeat">
+<div id="root"></div>
+	
+<script src="../public/js/common.js"></script>
+<script src="../public/js/pagination.js"></script>
+<script id="templateId" type="text/html">
+	<div class="album album-type-1">
+		<div class="album-list" id="listTpl"></div>
+		<div class="prev"></div>
+		<div class="next"></div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-menu">
+			{{each footers as v i}}
+				<span id="menu{{i+1}}" class="menu-{{i+1}}"></span>
+			{{/each}}
+		</div>
+	</div>
+
+	<div id="controller">
+		<div class="con-footer">
+			{{each footers as v i}}
+				<a href="#" onfocus="addFocus('#menu{{i+1}}')" onblur="removeFocus('#menu{{i+1}}')"><img src="../public/images/dot.gif" /></a>
+			{{/each}}
+		</div>
+	</div>
+</script>
+<script id="list" type="text/html">
+	{{each list as v i}}
+		<a onfocus="addMarquee(this)" onblur="removeMarquee(this)" class="list-type-3 A" href="{{v.href}}">
+			<img class="img" src="{{v.img}}" />
+			<div class="text">{{v.text}}</div>
+		</a>
+	{{/each}}
+</script>
+<script type="text/javascript">
+	var html = template('templateId', data);
+	document.getElementById('root').innerHTML = html;
+
+	pagination({
+		template_id: "list",
+		container_id: "listTpl",
+		size: 4,
+		row: 4,
+		items: data.lists,
+		callback: function(text) {
+			document.getElementById('listTpl').innerHTML = text;
+		}
+	});
+	var title = "";
+	function addMarquee(obj){
+		var reg = new RegExp("(<|<\/)marquee>", "g");
+		title = obj.children[1].innerHTML.replace(reg, "");
+		if(title.length > 6){
+			obj.children[1].innerHTML = "<marquee>"+title+"</marquee>";
+		}
+	}
+	function removeMarquee(obj){
+		if(!title) {
+			var reg = new RegExp("(<|<\/)marquee>", "g");
+			title = obj.children[1].innerHTML.replace(reg, "");
+		}
+		if(title.length > 6){
+			obj.children[1].innerHTML = title;
+		}
+	}
+
+</script>
+</body>
+</html>

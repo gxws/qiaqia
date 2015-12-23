@@ -1,0 +1,81 @@
+.alltema {
+	position: absolute;
+	top: 0;
+	left: 100px;
+	width: 1084px;
+}
+.alltema .prev {
+	position: absolute;
+	top: 326px;
+	left: -75px;
+}
+.alltema .next {
+	position: absolute;
+	top: 326px;
+	right: -75px;
+}
+.alltema .tema-header {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	font-size: 30px;
+	color: #ffffff;
+}
+.alltema .tema-header .title {
+	float: left;
+}
+.alltema .tema-header .pages {
+	float: right;
+}
+
+.alltema .tema-list {
+	position: absolute;
+	top: 163px;
+	left: 0;
+	width: 1084px;
+}
+.alltema .tema-list a {
+	float: left;
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.alltema .tema-list a:nth-child(4n+4) {
+	margin-right: 0;
+}
+.alltema .tema-list .text {
+	position: absolute;
+	bottom: 0;
+	width: 236px;
+	padding: 0 10px;
+	font-size: 18px;
+	color: #ffffff;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgba(0,0,0, 0.4);
+	overflow: hidden;
+}
+/* icon */
+.alltema .icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 76px;
+	height: 76px;
+}
+
+
+/* a标签 分离布局 */
+.con-header , .con-footer{
+	left: 100px;
+	width: 1084px;
+}
+.con-header a {
+	width: 25%;
+	height: 1px;
+}
+.con-footer a {
+	width: 50%;
+	height: 1px;
+}

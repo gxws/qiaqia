@@ -1,0 +1,75 @@
+.album {
+	position: absolute;
+	width: 1084px;
+	left: 100px;
+}
+.album-type-1 {
+	top: 388px;
+}
+.album-type-2 {
+	top: 295px;
+}
+.album-type-1 .prev {
+	position: absolute;
+	top: 63px;
+	left: -75px;
+}
+.album-type-1 .next {
+	position: absolute;
+	top: 63px;
+	right: -75px;
+}
+.album-type-2 .prev {
+	position: absolute;
+	top: 167px;
+	left: -75px;
+}
+.album-type-2 .next {
+	position: absolute;
+	top: 167px;
+	right: -75px;
+}
+
+.album .album-list {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1084px;
+}
+.album .album-list a {
+	float: left;
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.album .album-list a:nth-child(4n+4) {
+	margin-right: 0;
+}
+.album .album-list .text {
+	position: absolute;
+	bottom: 0;
+	width: 236px;
+	padding: 0 10px;
+	font-size: 18px;
+	color: #ffffff;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgba(0,0,0, 0.4);
+	overflow: hidden;
+}
+
+
+/* a标签 分离布局 */
+.con-header , .con-footer{
+	left: 100px;
+	width: 1084px;
+}
+.con-header a {
+	width: 25%;
+	height: 1px;
+}
+.con-footer a {
+	width: 50%;
+	height: 1px;
+}
