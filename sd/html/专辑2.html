@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="page-view-size" content="640*530" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<style type="text/css">
+* {margin: 0;padding: 0;}
+img {border: none;}
+a {text-decoration: none;}
+a:focus{outline:none;}
+body {width:640px;height:526px;font-family:SimHei;overflow: hidden;position: absolute;top:0; left: 0;}
+.hidden{visibility: hidden;}
+
+.prev-img {position: absolute;top:349px;left: 15px;}
+.prev-border {position: absolute;top: 344px;left: 12px;width: 20px;height: 35px;background: url(../public/images/p-border.png) no-repeat;z-index: 1;}
+.prev-a {position: absolute;top: 223px;left: 0;}
+.next-img {position: absolute;top:349px;left: 609px;}
+.next-border {position: absolute;top: 344px;left: 606px;width: 20px;height: 35px;background: url(../public/images/p-border.png) no-repeat;z-index: 1;}
+.next-a {position: absolute;top: 223px;left: 500px;}
+.text-center {text-align: center;}
+
+/* 主体内容css */
+.rect-img1 {position: absolute;top: 223px;left: 50px;width: 171px;height: 128px;}
+.rect-text1 {position: absolute;top: 321px;left: 50px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect1 {position: absolute;top: 220px;left: 47px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a1 {position: absolute;top: 223px;left: 50px;}
+
+.rect-img2 {position: absolute;top: 223px;left: 234px;width: 171px;height: 128px;}
+.rect-text2 {position: absolute;top: 321px;left: 234px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect2 {position: absolute;top: 220px;left: 231px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a2 {position: absolute;top: 223px;left: 234px;}
+
+.rect-img3 {position: absolute;top: 223px;left: 417px;width: 171px;height: 128px;}
+.rect-text3 {position: absolute;top: 321px;left: 417px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect3 {position: absolute;top: 220px;left: 414px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a3 {position: absolute;top: 223px;left: 417px;}
+
+.rect-img4 {position: absolute;top: 364px;left: 50px;width: 171px;height: 128px;}
+.rect-text4 {position: absolute;top: 462px;left: 50px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect4 {position: absolute;top: 361px;left: 47px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a4 {position: absolute;top: 364px;left: 50px;}
+
+.rect-img5 {position: absolute;top: 364px;left: 234px;width: 171px;height: 128px;}
+.rect-text5 {position: absolute;top: 462px;left: 234px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect5 {position: absolute;top: 361px;left: 231px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a5 {position: absolute;top: 364px;left: 234px;}
+
+.rect-img6 {position: absolute;top: 364px;left: 417px;width: 171px;height: 128px;}
+.rect-text6 {position: absolute;top: 462px;left: 417px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect6 {position: absolute;top: 361px;left: 414px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a6 {position: absolute;top: 364px;left: 417px;}
+/* 主体内容css End*/
+</style>
+</head>
+<body style="background:url(../public/images/background.jpg) no-repeat">
+	<!-- 左箭头 -->
+	<img class="prev-img" src="../public/images/prev.png" />
+	<div id="prev" class="prev-border" style="visibility: hidden;"></div>
+	<a class="prev-a" onfocus="show('prev')" onblur="hide('prev')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	<!-- 左箭头 End -->
+
+	<!-- 主体内容 -->
+	<img class="rect-img1" src="../uploads/image1.jpg" /><!-- 图片路径需从后台获取 -->
+	<div class="rect-text1 text-center">荷塘月色 - 我是谁</div>
+	<div id="rect1" class="rect1" style="visibility: hidden;"></div>
+	<a class="rect-a1" onfocus="show('rect1')" onblur="hide('rect1')" href="javascript:;"><img src="../public/images/dot.gif"/></a><!-- 链接路径需从后台获取 -->
+
+	<img class="rect-img2" src="../uploads/image2.jpg" />
+	<div class="rect-text2 text-center">荷塘月色 - 我是谁</div>
+	<div id="rect2" class="rect2" style="visibility: hidden;"></div>
+	<a class="rect-a2" onfocus="show('rect2')" onblur="hide('rect2')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+
+	<img class="rect-img3" src="../uploads/image2.jpg" />
+	<div class="rect-text3 text-center">荷塘月色 - 我是谁</div>
+	<div id="rect3" class="rect3" style="visibility: hidden;"></div>
+	<a class="rect-a3" onfocus="show('rect3')" onblur="hide('rect3')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+
+	<img class="rect-img4" src="../uploads/image2.jpg" />
+	<div class="rect-text4 text-center">荷塘月色 - 我是谁</div>
+	<div id="rect4" class="rect4" style="visibility: hidden;"></div>
+	<a class="rect-a4" onfocus="show('rect4')" onblur="hide('rect4')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+
+	<img class="rect-img5" src="../uploads/image2.jpg" />
+	<div class="rect-text5 text-center">荷塘月色 - 我是谁</div>
+	<div id="rect5" class="rect5" style="visibility: hidden;"></div>
+	<a class="rect-a5" onfocus="show('rect5')" onblur="hide('rect5')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+
+	<img class="rect-img6" src="../uploads/image2.jpg" />
+	<div class="rect-text6 text-center">荷塘月色 - 我是谁</div>
+	<div id="rect6" class="rect6" style="visibility: hidden;"></div>
+	<a class="rect-a6" onfocus="show('rect6')" onblur="hide('rect6')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	<!-- 主体内容 End -->
+
+	<!-- 右箭头 -->
+	<img class="next-img" src="../public/images/next.png" />
+	<div id="next" class="next-border" style="visibility: hidden;"></div>
+	<a class="next-a" onfocus="show('next')" onblur="hide('next')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	<!-- 右箭头 End -->
+
+	<script>
+		function show(id){
+			document.getElementById(id).style.visibility = 'visible';
+		}
+		function hide(id){
+			document.getElementById(id).style.visibility = 'hidden';
+		}
+	</script>
+</body>
+</html>

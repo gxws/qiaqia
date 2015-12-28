@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="page-view-size" content="640*530" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>title</title>
+<style type="text/css">
+* {margin: 0;padding: 0;}
+img {border: none;}
+a {text-decoration: none;}
+a:focus{outline:none;}
+body {width:640px;height:526px;font-family:SimHei;overflow: hidden;position: absolute;top:0; left: 0;}
+.hidden{visibility: hidden;}
+
+.prev-img {position: absolute;top:349px;left: 15px;}
+.prev-border {position: absolute;top: 344px;left: 12px;width: 20px;height: 35px;background: url(../public/images/p-border.png) no-repeat;z-index: 1;}
+.prev-a {position: absolute;top: 300px;left: 0;}
+.next-img {position: absolute;top:349px;left: 609px;}
+.next-border {position: absolute;top: 344px;left: 606px;width: 20px;height: 35px;background: url(../public/images/p-border.png) no-repeat;z-index: 1;}
+.next-a {position: absolute;top: 300px;left: 500px;}
+.text-center {text-align: center;}
+/* 主体内容css */
+.rect-img1 {position: absolute;top: 300px;left: 50px;width: 171px;height: 128px;}
+.rect-text1 {position: absolute;top: 398px;left: 50px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect1 {position: absolute;top: 297px;left: 47px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a1 {position: absolute;top: 300px;left: 50px;}
+
+.rect-img2 {position: absolute;top: 300px;left: 234px;width: 171px;height: 128px;}
+.rect-text2 {position: absolute;top: 398px;left: 234px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect2 {position: absolute;top: 297px;left: 231px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a2 {position: absolute;top: 300px;left: 234px;}
+
+.rect-img3 {position: absolute;top: 300px;left: 417px;width: 171px;height: 128px;}
+.rect-text3 {position: absolute;top: 398px;left: 417px;width: 171px;height: 30px;font-size: 18px;color:#ffffff;line-height: 30px;background: #000000;}
+.rect3 {position: absolute;top: 297px;left: 414px;width: 177px;height: 134px;background: url(../public/images/border5.png) no-repeat;z-index: 1;}
+.rect-a3 {position: absolute;top: 300px;left: 417px;}
+/* 主体内容css End*/
+
+/* 底部导航css */
+.footer1-default {position: absolute;top: 466px;left: 238px;width: 30px;height: 44px;}
+.footer1 {position: absolute;top: 461px;left: 226px;width: 54px;height: 54px;background: url(../public/images/menu-border.png) no-repeat;z-index: 1;}
+.f1-a {position: absolute;top: 466px;left: 234px;}
+
+.footer2-default {position: absolute;top: 467px;left: 322px;width: 28px;height: 43px;}
+.footer2 {position: absolute;top: 461px;left: 310px;width: 54px;height: 54px;background: url(../public/images/menu-border.png) no-repeat;z-index: 1;}
+.f2-a {position: absolute;top: 466px;left: 254px;}
+
+.footer3-default {position: absolute;top: 465px;left: 405px;width: 28px;height: 44px;}
+.footer3 {position: absolute;top: 461px;left: 393px;width: 54px;height: 54px;background: url(../public/images/menu-border.png) no-repeat;z-index: 1;}
+.f3-a {position: absolute;top: 466px;left: 274px;}
+/* 底部导航css End */
+</style>
+</head>
+<body style="background:url(../public/images/background.jpg) no-repeat">
+	<!-- 左箭头 -->
+	<img class="prev-img" src="../public/images/prev.png" />
+	<div id="prev" class="prev-border" style="visibility: hidden;"></div>
+	<a class="prev-a" onfocus="show('prev')" onblur="hide('prev')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	<!-- 左箭头 End -->
+
+	<!-- 主体内容 -->
+	<img class="rect-img1" src="../uploads/image1.jpg" /><!-- 图片路径需从后台获取 -->
+	<div class="rect-text1 text-center">荷塘月色 - 我是谁</div>
+	<div id="rect1" class="rect1" style="visibility: hidden;"></div>
+	<a class="rect-a1" onfocus="show('rect1')" onblur="hide('rect1')" href="javascript:;"><img src="../public/images/dot.gif"/></a><!-- 链接路径需从后台获取 -->
+
+	<img class="rect-img2" src="../uploads/image2.jpg" />
+	<div class="rect-text2 text-center">荷塘月色 - 我是谁</div>
+	<div id="rect2" class="rect2" style="visibility: hidden;"></div>
+	<a class="rect-a2" onfocus="show('rect2')" onblur="hide('rect2')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+
+	<img class="rect-img3" src="../uploads/image2.jpg" />
+	<div id="rect3" class="rect3" style="visibility: hidden;"></div>
+	<a class="rect-a3" onfocus="show('rect3')" onblur="hide('rect3')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	<!-- 主体内容 End -->
+
+	<!-- 右箭头 -->
+	<img class="next-img" src="../public/images/next.png" />
+	<div class="rect-text3 text-center">荷塘月色 - 我是谁</div>
+	<div id="next" class="next-border" style="visibility: hidden;"></div>
+	<a class="next-a" onfocus="show('next')" onblur="hide('next')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	<!-- 右箭头 End -->
+
+	<!-- 底部导航菜单 -->
+	<div id="f1def" class="footer1-default"><img src="../public/images/footer1-default.png" width="30" height="44" /></div>
+	<div id="f1" class="footer1" style="visibility: hidden;"></div>
+	<a class="f1-a" onfocus="show('f1')" onblur="hide('f1')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+
+	<div id="f2def" class="footer2-default"><img src="../public/images/footer2-default.png" width="28" height="43" /></div>
+	<div id="f2" class="footer2" style="visibility: hidden;"></div>
+	<a class="f2-a" onfocus="show('f2')" onblur="hide('f2')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+
+	<div id="f3def" class="footer3-default"><img src="../public/images/footer3-default.png" width="28" height="44" /></div>
+	<div id="f3" class="footer3" style="visibility: hidden;"></div>
+	<a class="f3-a" onfocus="show('f3')" onblur="hide('f3')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	<!-- 底部导航菜单 -->
+
+	<script>
+		function show(id){
+			document.getElementById(id).style.visibility = 'visible';
+		}
+		function hide(id){
+			document.getElementById(id).style.visibility = 'hidden';
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+1. 某页面 主体内容需要遍历时，样式名 和 ID 是不一样
+   - ```
+   	 <img class="rect-img2" src="../uploads/image2.jpg" />
+	 <div class="rect-text2 text-center">荷塘月色 - 我是谁</div>
+	 <div id="rect2" class="rect2" style="visibility: hidden;"></div>
+	 <a class="rect-a2" onfocus="show('rect2')" onblur="hide('rect2')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	 ```
+	 转为jsp如下：
+	 ```
+	 <c:forEach items="" var="vo" varStatus="status">
+	 	<img class="rect-img${status.index + 1}" src="${vo.img}" />
+	 	<div class="rect-text${status.index + 1} text-center">${vo.title}</div>
+	 	<div id="rect${status.index + 1}" class="rect${status.index + 1}" style="visibility: hidden;"></div>
+	 	<a class="rect-a${status.index + 1}" onfocus="show('rect${status.index + 1}')" onblur="hide('rect${status.index + 1}')" href="javascript:;"><img src="../public/images/dot.gif"/></a>
+	 </c:forEach> 
+	 ```
+
+2. 头部菜单如果需要显示激活状态时，例子如下 （建议不用，因为激活状态跟经过状态一样,除非不一样用才好）
+	默认状态比激活状态多了 style="visibility: hidden;" onfocus="show('nav1')" onblur="hide('nav1')"
+	
+	- 默认状态：
+	  ```
+	  <div class="nav1-default"><img src="../public/images/nav1-default.jpg" width="57" height="32"/></div>
+	  <div id="nav1" class="nav1"><img src="../public/images/nav1.jpg" width="57" height="32"/></div>
+	  <a class="nav1-a" href="javascript:;"><img src="../public/images/dot.gif"/></a> 
+	  ```
+	- 激活状态：
+	  ```
+	  <div class="nav1-default"><img src="../public/images/nav1-default.jpg" width="57" height="32"/></div>
+	  <div id="nav1" class="nav1"><img src="../public/images/nav1.jpg" width="57" height="32"/></div>
+	  <a class="nav1-a" href="javascript:;"><img src="../public/images/dot.gif"/></a> 
+	  ```

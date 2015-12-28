@@ -17,6 +17,47 @@ a {
 	outline: none;
 	text-decoration: none;
 }
+/* 原创icon */
+.icon-original {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url('../images/yuanchuang.png?__spriter');
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 75px;
+}
+/* 教学icon */
+.icon-teaching {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url('../images/jiaoxue.png?__spriter');
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 75px;
+}
+/* 欣赏icon */
+.icon-appreciate {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url('../images/xinshang.png?__spriter');
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 75px;
+}
+/* 赏+学icon */
+.icon-shangjiaxue {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url('../images/shangjiaxue.png?__spriter');
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 75px;
+}
+
 .prev, .next {
 	display: block;
 	width: 50px;

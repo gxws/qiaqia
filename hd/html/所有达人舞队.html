@@ -16,38 +16,47 @@
 				href: "#"
 			}],
 			lists: [{
+				icon: "icon-appreciate",
 				href: "#",
 				img: "../uploads/image3.jpg",
 				text: "这是一个魔法的神奇世界这是一个魔法的神奇世界"
 			},{
+				icon: "",
+				href: "#",
+				img: "../uploads/image3.jpg",
+				text: "这是一个魔法的神奇世界这是一个魔法的神奇世界"
+			},{
+				icon: "",
 				href: "#",
 				img: "../uploads/image3.jpg",
 				text: "这是一个魔法的神奇世界"
 			},{
+				icon: "",
 				href: "#",
 				img: "../uploads/image3.jpg",
 				text: "这是一个魔法的神奇世界"
 			},{
+				icon: "",
 				href: "#",
 				img: "../uploads/image3.jpg",
 				text: "这是一个魔法的神奇世界"
 			},{
+				icon: "",
 				href: "#",
 				img: "../uploads/image3.jpg",
 				text: "这是一个魔法的神奇世界"
 			},{
+				icon: "",
 				href: "#",
 				img: "../uploads/image3.jpg",
 				text: "这是一个魔法的神奇世界"
 			},{
+				icon: "",
 				href: "#",
 				img: "../uploads/image3.jpg",
 				text: "这是一个魔法的神奇世界"
 			},{
-				href: "#",
-				img: "../uploads/image3.jpg",
-				text: "这是一个魔法的神奇世界"
-			},{
+				icon: "",
 				href: "#",
 				img: "../uploads/image3.jpg",
 				text: "这是一个魔法的神奇世界9"
@@ -93,9 +102,11 @@
 <script id="list" type="text/html">
 	{{each list as v i}}
 		<a onfocus="addMarquee(this)" onblur="removeMarquee(this)" class="list-type-3 A" href="{{v.href}}">
-			<img class="icon" src="../uploads/jiaoxue.png"/>
 			<img class="img" src="{{v.img}}" />
 			<div class="text">{{v.text}}</div>
+			{{if v.icon}}
+				<span class="{{v.icon}}"></span>
+			{{/if}}
 		</a>
 	{{/each}}
 </script>
@@ -118,9 +129,9 @@
 	var title = "";
 	function addMarquee(obj){
 		var reg = new RegExp("(<|<\/)marquee>", "g");
-		title = obj.children[2].innerHTML.replace(reg, "");
+		title = obj.children[1].innerHTML.replace(reg, "");
 		if(title.length > 6){
-			obj.children[2].innerHTML = "<marquee>"+title+"</marquee>";
+			obj.children[1].innerHTML = "<marquee>"+title+"</marquee>";
 		}
 	}
 	function removeMarquee(obj){
@@ -129,7 +140,7 @@
 			title = obj.children[1].innerHTML.replace(reg, "");
 		}
 		if(title.length > 6){
-			obj.children[2].innerHTML = title;
+			obj.children[1].innerHTML = title;
 		}
 	}
 
